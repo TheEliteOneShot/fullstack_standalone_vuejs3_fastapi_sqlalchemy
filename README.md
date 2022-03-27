@@ -1,8 +1,8 @@
 # Description
 
 Requirements:
-- No NPM or PIP install required, it is fully standalone.
-- This application has been targeted for Python version 3.6, but it should work just fine for newer version of Python.
+- No NPM or PIP install required.
+- This application has been targeted for Python version 3.6. But it should work for newer versions of Python (not tested).
 
 Instructions to run:
 - Run the command "python run.py"
@@ -13,9 +13,7 @@ Features of the application:
 - Material Design for Vue JS 3
 - Bootstrap 5
 - FAST API
-- SQL Alchemy ( Currently configured to use an SQLITE database with an ASYNC adapter )
-
-
+- SQL Alchemy (Currently configured to use an SQLITE database with an ASYNC adapter)
 
 # Images of the application
 <img width="1890" alt="image" src="https://user-images.githubusercontent.com/45804405/160288678-5df6ddb8-2c8d-490a-ac0d-1f00b72da159.png">

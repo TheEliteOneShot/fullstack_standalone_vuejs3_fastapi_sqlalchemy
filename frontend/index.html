@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vue 3 Quickstart</title>
+    <link rel="icon" href="/static/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+    </script>
+
+    <!-- Left and Top Navigation Bars -->
+    <link href="/static/styles/navigation.css" rel="stylesheet">
+    <script src="/static/scripts/navigation.js"></script>
+    
+    <!-- VueJS3 -->
+    <script src="/static/scripts/vue.global.prod.min.js"></script>
+
+    <!-- Bootstrap 5 -->
+    <script src="/static/scripts/bootstrap5.min.js"></script>
+    <link href="/static/styles/bootstrap5/bootstrap5.min.css" rel="stylesheet">
+
+    <!-- Box Icons -->
+    <script src="/static/scripts/box.icons.min.js"></script>
+    <link href='/static/styles/box_icons/box.icons.min.css' rel='stylesheet'>
+    
+    <!-- Vue Router -->
+    <script src="/static/scripts/vue.router.min.js"></script>
+
+    <!-- Material Design -->
+    <!-- Documentation and Demo functionality at www.mdbootstrap.com/docs/b5/vue/components -->
+    <link href="/static/styles/mdb/mdb.min.css" rel="stylesheet">
+    <script src="/static/scripts/mdb.umd.min.js"></script>
+
+    <!-- Ag Grid DataTable Enterprise (Unlocked) -->
+    <!-- Documentation and Demo functionality at www.ag-grid.com/javascript-data-grid/ -->
+    <script src="/static/scripts/ag_grid_enterprise.min.js"></script>
+    <link href="/static/styles/ag_grid/ag_grid.min.css" rel="stylesheet" >
+    <link href="/static/styles/ag_grid/ag_theme_alpine_dark.min.css" rel="stylesheet" >
+
+    <!-- Vue Toast Notification -->
+    <script src="/static/scripts/vue_toast_notification.js"></script>
+    <link href="/static/styles/vue_toast_notification/toast_theme_sugar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="app">
+<!-- Main Application Mounted Here -->
+</div>
+
+<script type="module">
+    import App from './app.js'
+    import Router from './router/index.js'
+    import Config from './config.js'
+
+    const {createApp} = Vue
+    const app = createApp(App)
+
+    // Add configuration
+    Object.assign(app.config.globalProperties, Config)
+
+    // Add Global Plugins
+    app.use(Router)
+    app.use(VueToast.ToastPlugin);
+
+    // Add Global Components
+    // Add all of the VUEJS3 MDB components
+    app.component('mdbButton', mdb.MDBBtn)
+    app.component('mdbAcccordion', mdb.MDBAccordion)
+    app.component('mdbAccordionItem', mdb.MDBAccordionItem)
+    app.component('mdbBadge', mdb.MDBBadge)
+    app.component('mdbBreadcrumb', mdb.MDBBreadcrumb)
+    app.component('mdbBreadcrumbItem', mdb.MDBBreadcrumbItem)
+    app.component('mdbBtn', mdb.MDBBtn)
+    app.component('mdbBtnClose', mdb.MDBBtnClose)
+    app.component('mdbBtnGroup', mdb.MDBBtnGroup)
+    app.component('mdbCard', mdb.MDBCard)
+    app.component('mdbCardBody', mdb.MDBCardBody)
+    app.component('mdbCardFooter', mdb.MDBCardFooter)
+    app.component('mdbCardGroup', mdb.MDBCardGroup)
+    app.component('mdbCardHeader', mdb.MDBCardHeader)
+    app.component('mdbCardImg', mdb.MDBCardImg)
+    app.component('mdbCardLink', mdb.MDBCardLink)
+    app.component('mdbCardText', mdb.MDBCardText)
+    app.component('mdbCardTitle', mdb.MDBCardTitle)
+    app.component('mdbCarousel', mdb.MDBCarousel)
+    app.component('mdbCheckbox', mdb.MDBCheckbox)
+    app.component('mdbCol', mdb.MDBCol)
+    app.component('mdbCollapse', mdb.MDBCollapse)
+    app.component('mdbContainer', mdb.MDBContainer)
+    app.component('mdbDropdown', mdb.MDBDropdown)
+    app.component('mdbDropdownMenu', mdb.MDBDropdownMenu)
+    app.component('mdbDropdownToggle', mdb.MDBDropdownToggle)
+    app.component('mdbFile', mdb.MDBFile)
+    app.component('mdbFooter', mdb.MDBFooter)
+    app.component('mdbIcon', mdb.MDBIcon)
+    app.component('mdbInput', mdb.MDBInput)
+    app.component('mdbListGroup', mdb.MDBListGroup)
+    app.component('mdbListGroupItem', mdb.MDBListGroupItem)
+    app.component('mdbModal', mdb.MDBModal)
+    app.component('mdbModalBody', mdb.MDBModalBody)
+    app.component('mdbModalFooter', mdb.MDBModalFooter)
+    app.component('mdbModalHeader', mdb.MDBModalHeader)
+    app.component('mdbModalTitle', mdb.MDBModalTitle)
+    app.component('mdbNavbar', mdb.MDBNavbar)
+    app.component('mdbNavbarBrand', mdb.MDBNavbarBrand)
+    app.component('mdbNavbarItem', mdb.MDBNavbarItem)
+    app.component('mdbNavbarNav', mdb.MDBNavbarNav)
+    app.component('mdbNavbarToggler', mdb.MDBNavbarToggler)
+    app.component('mdbPageItem', mdb.MDBPageItem)
+    app.component('mdbPageNav', mdb.MDBPageNav)
+    app.component('mdbPagination', mdb.MDBPagination)
+    app.component('mdbPopover', mdb.MDBPopover)
+    app.component('mdbProgress', mdb.MDBProgress)
+    app.component('mdbProgressBar', mdb.MDBProgressBar)
+    app.component('mdbRadio', mdb.MDBRadio)
+    app.component('mdbRange', mdb.MDBRange)
+    app.component('mdbRow', mdb.MDBRow)
+    app.component('mdbSpinner', mdb.MDBSpinner)
+    app.component('mdbSwitch', mdb.MDBSwitch)
+    app.component('mdbTabContent', mdb.MDBTabContent)
+    app.component('mdbTabItem', mdb.MDBTabItem)
+    app.component('mdbTabNav', mdb.MDBTabNav)
+    app.component('mdbTabPane', mdb.MDBTabPane)
+    app.component('mdbTable', mdb.MDBTable)
+    app.component('mdbTabs', mdb.MDBTabs)
+    app.component('mdbTextarea', mdb.MDBTextarea)
+    app.component('mdbTooltip', mdb.MDBTooltip)
+    app.component('mdbRipple', mdb.mdbRipple)
+    app.component('mdbScrollspy', mdb.mdbScrollspy)
+
+    app.mount('#app')
+    
+</script>
+
+</body>
+</html>

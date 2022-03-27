@@ -9,7 +9,7 @@ Instructions to run:
 - Run the command "python run.py"
 
 Features of the application:
-- AG Grid Datatable
+- AG Grid Datatable Enterprise
 - Vue Toast Notifications
 - Material Design for Vue JS 3
 - Bootstrap 5

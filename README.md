@@ -5,6 +5,7 @@ Requirements:
 - This application has been targeted for Python version 3.6. But it should work for newer versions of Python (not tested).
 
 Instructions to run:
+- Download the files
 - Run the command "python run.py"
 
 Features of the application:

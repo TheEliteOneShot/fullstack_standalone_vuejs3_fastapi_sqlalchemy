@@ -138,7 +138,7 @@ export default {
         if (response) {
           await gridOptionsServer.api.refreshServerSideStore();
           app.$toast.info(
-            `${gridOptionsServer.api.getDisplayedRowCount()} were successfully deleted.`,
+            `${data.length} were successfully deleted.`,
             { position: "top" }
           );
         }

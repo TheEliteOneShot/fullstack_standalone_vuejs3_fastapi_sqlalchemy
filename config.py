@@ -16,7 +16,9 @@ class Config(object):
     # CORS
     CORS_ORIGINS = [
     "http://localhost:5000",
-    "http://127.0.0.1:5500",
+    "http://localhost:5001",
+    "http://127.0.0.1:5000",
+    "http://127.0.0.1:5001",
     ]
 
     CORS_ALLOW_CREDENTIALS=True
